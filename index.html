@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Ficha de Apresentação</title>
+<meta charset="UTF-8">
+<title>Painel Admin</title>
 <style>
-
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        background: #f5f6fa;
+    }
+    .sidebar {
+        width: 220px;
+        background: #ffffff;
+        border-right: 1px solid #ddd;
+        padding: 20px;
+    }
+    .sidebar h2 {
+        margin-bottom: 30px;
+    }
+    .sidebar a {
+        display: block;
+        margin: 15px 0;
+        text-decoration: none;
+        color: #333;
+    }
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        background: #2f6df6;
+        color: white;
+        padding: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .content {
+        padding: 30px;
+    }
+    .card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    .card h3 {
+        margin-top: 0;
+    }
 </style>
 </head>
+<body>
+<div class="sidebar">
+    <h2>Tecinfo</h2>
+    <hr>
+    <a href="#">Times</a>
+    <hr>
+    <a href="#">Importações</a>
+    <hr>
+</div>
+<div class="main">
+    <div class="header">
+        Sistema de Gerenciamento — TecInfo 2026
+    </div>
+    <div class="content">
+        <h1>Bem-vindo ao seu painel, Carlos Neto!</h1>
+        <p>carlos.netocna@email.com</p>
+        <div class="card">
+            <h3>Importações</h3>
+            <p>Importe dados de alunos, professores e avaliadores para o sistema.</p>
+        </div>
+        <div class="card">
+            <h3>Gerenciamento de Times</h3>
+            <p>Crie e edite informações de times no sistema.</p>
+        </div>
+    </div>
+</div>
+</body>
 </html>
